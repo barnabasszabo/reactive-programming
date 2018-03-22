@@ -1,0 +1,20 @@
+version: '3.4'
+services:
+  spring:
+    image: loxon/meetup-reactive:spring5-1.0-alpine
+    ports:
+      - 8080:8080
+    deploy:
+      resources:
+        reservations:
+          cpus: "3"
+          memory: "10g"
+  mongo:
+    image: mongo
+    volumes:
+        - ".mongo:/data/db"
+    deploy:
+      resources:
+        reservations:
+          cpus: "0.5"
+          memory: "1g"

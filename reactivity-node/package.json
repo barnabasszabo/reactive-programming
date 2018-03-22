@@ -1,0 +1,31 @@
+{
+  "name": "reactivity",
+  "version": "1.0.0",
+  "description": "Example project using reactive patterns",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc --skipLibCheck && node dist/index.js",
+    "test": "jasmine"
+  },
+  "author": "Miklos Kiss",
+  "license": "MIT",
+  "dependencies": {
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^9.4.7",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^9.6.0",
+    "eslint": "^4.18.2",
+    "express": "^4.16.3",
+    "jasmine": "^3.1.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "superagent": "^3.8.2",
+    "typescript": "^2.7.2"
+  }
+}
