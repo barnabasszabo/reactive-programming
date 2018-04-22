@@ -6,7 +6,7 @@ export default class MongoOperation implements Operation {
     private static model;
 
     constructor() {
-        mongoose.connect(config.config.mongo.url);
+        mongoose.connect(config.config.mongo.url, {poolSize: config.config.mongo.poolSize});
         mongoose.Promise = global.Promise;
         let db = mongoose.connection;
         db.on("error", function(error){

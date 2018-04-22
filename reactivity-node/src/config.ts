@@ -6,6 +6,7 @@ export let config = {
 		"password": "password"
 	},
 	"mongo": {
-		"url": "mongodb://mongo/reactive" 
+		"url": "mongodb://172.17.0.1/reactive",
+		"poolSize": 20
 	}
 };
